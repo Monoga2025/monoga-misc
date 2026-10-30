@@ -1,18 +1,22 @@
-# Misc: SolidWorks Parts and Windows Utility Scripts
+# Monoga Misc
 
-Small, unrelated artifacts from coursework and daily tooling.
+Small, unrelated artifacts from coursework and daily Windows tooling: a few SolidWorks part files and two batch scripts.
 
-## `solidworks-parts/`
+**Why:** a holding repo for one-off files that did not belong in a project repo.
 
-Four SolidWorks part files from a mechanisms course (activity, exercise, partial exam, and one more part). Open with SolidWorks.
-
-## `scripts/`
-
-| File | What it does |
+## Structure
+| Path | What it is |
 |---|---|
-| `Control-Scroll-y-Touchpad.bat` | Console menu to toggle a mouse scroll filter and enable/disable one specific ELAN touchpad (elevates via UAC, targets a single hardware instance ID). Machine-specific: the ID and the referenced `Filtro-Scroll-Windows.ps1` are not portable or included. |
-| `CRM.bat` | Start/stop menu for a local dev stack: starts a portable Postgres, the API (turbo), the Next.js app and an optional AI agent, waits for the ports, and opens the app. Set `CRM_ROOT` and `CRM_PG` first. The project it launches is not included. |
+| [solidworks-parts/](solidworks-parts/README.md) | Four SolidWorks part files from a mechanisms course |
+| [scripts/](scripts/README.md) | Two Windows batch utilities |
+
+## Scripts at a glance
+- `Control-Scroll-y-Touchpad.bat`: console menu to toggle a mouse scroll filter and one specific touchpad. It is machine-specific and not portable.
+- `CRM.bat`: start and stop menu for a local dev stack. It needs the `CRM_ROOT` and `CRM_PG` environment variables; the project it launches is not included.
 
 ## Status
+🟡 Utilities for personal use, shown as-is. Not packaged or tested.
 
-Utilities for personal use, shown as-is. Not packaged or tested elsewhere.
+---
+
+Built by Monoga · [github.com/Monoga2025](https://github.com/Monoga2025)
